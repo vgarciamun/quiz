@@ -1,37 +1,193 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/pamaviyo/.nvm/versions/node/v0.12.3/bin/node',
 1 verbose cli   '/home/pamaviyo/.nvm/versions/node/v0.12.3/bin/npm',
-1 verbose cli   'start' ]
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'express-session',
+1 verbose cli   '1.0.3' ]
 2 info using npm@2.9.1
 3 info using node@v0.12.3
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart quiz@0.0.0
-6 info start quiz@0.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info quiz@0.0.0 Failed to exec start script
-9 verbose stack Error: quiz@0.0.0 start: `node ./bin/www`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (/home/pamaviyo/.nvm/versions/node/v0.12.3/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
-9 verbose stack     at EventEmitter.emit (events.js:110:17)
-9 verbose stack     at ChildProcess.<anonymous> (/home/pamaviyo/.nvm/versions/node/v0.12.3/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-9 verbose stack     at ChildProcess.emit (events.js:110:17)
-9 verbose stack     at maybeClose (child_process.js:1015:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
-10 verbose pkgid quiz@0.0.0
-11 verbose cwd /home/pamaviyo/MOOC/mis_proyectos/quiz
-12 error Linux 3.13.0-57-generic
-13 error argv "/home/pamaviyo/.nvm/versions/node/v0.12.3/bin/node" "/home/pamaviyo/.nvm/versions/node/v0.12.3/bin/npm" "start"
-14 error node v0.12.3
-15 error npm  v2.9.1
-16 error code ELIFECYCLE
-17 error quiz@0.0.0 start: `node ./bin/www`
-17 error Exit status 1
-18 error Failed at the quiz@0.0.0 start script 'node ./bin/www'.
-18 error This is most likely a problem with the quiz package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     node ./bin/www
-18 error You can get their info via:
-18 error     npm owner ls quiz
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 verbose install initial load of /home/pamaviyo/MOOC/mis_proyectos/quiz/package.json
+5 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/body-parser/package.json
+6 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/cookie-parser/package.json
+7 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/debug/package.json
+8 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/ejs/package.json
+9 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/express/package.json
+10 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/express-partials/package.json
+11 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/express-session/package.json
+12 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/method-override/package.json
+13 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/morgan/package.json
+14 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/npm-debug.log/package.json
+15 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/pg/package.json
+16 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/pg-hstore/package.json
+17 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/sequelize/package.json
+18 verbose installManyTop reading scoped package data from /home/pamaviyo/MOOC/mis_proyectos/quiz/node_modules/serve-favicon/package.json
+19 verbose readDependencies loading dependencies from /home/pamaviyo/MOOC/mis_proyectos/quiz/package.json
+20 verbose install express-session is installed as 1.11.3
+21 silly cache add args [ 'express-session@^1.11.3', null ]
+22 verbose cache add spec express-session@^1.11.3
+23 silly cache add args [ '1.0.3', null ]
+24 verbose cache add spec 1.0.3
+25 silly cache add parsed spec { raw: 'express-session@^1.11.3',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'express-session',
+25 silly cache add   rawSpec: '^1.11.3',
+25 silly cache add   spec: '>=1.11.3 <2.0.0',
+25 silly cache add   type: 'range' }
+26 silly addNamed express-session@>=1.11.3 <2.0.0
+27 verbose addNamed ">=1.11.3 <2.0.0" is a valid semver range for express-session
+28 silly addNameRange { name: 'express-session',
+28 silly addNameRange   range: '>=1.11.3 <2.0.0',
+28 silly addNameRange   hasData: false }
+29 silly mapToRegistry name express-session
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/express-session
+33 verbose addNameRange registry:https://registry.npmjs.org/express-session not in flight; fetching
+34 silly cache add parsed spec { raw: '1.0.3',
+34 silly cache add   scope: null,
+34 silly cache add   name: '1.0.3',
+34 silly cache add   rawSpec: '',
+34 silly cache add   spec: '*',
+34 silly cache add   type: 'range' }
+35 silly addNamed 1.0.3@*
+36 verbose addNamed "*" is a valid semver range for 1.0.3
+37 silly addNameRange { name: '1.0.3', range: '*', hasData: false }
+38 silly mapToRegistry name 1.0.3
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/1.0.3
+42 verbose addNameRange registry:https://registry.npmjs.org/1.0.3 not in flight; fetching
+43 verbose request uri https://registry.npmjs.org/1.0.3
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 21:04:27
+46 verbose request id 234a408e4d70270e
+47 http request GET https://registry.npmjs.org/1.0.3
+48 verbose request uri https://registry.npmjs.org/express-session
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 21:04:27
+51 verbose etag "B02YWZD382WL0B7VZCFAT85EQ"
+52 http request GET https://registry.npmjs.org/express-session
+53 http 304 https://registry.npmjs.org/express-session
+54 silly get cb [ 304,
+54 silly get   { date: 'Tue, 28 Jul 2015 20:04:27 GMT',
+54 silly get     via: '1.1 varnish',
+54 silly get     'cache-control': 'max-age=60',
+54 silly get     etag: '"B02YWZD382WL0B7VZCFAT85EQ"',
+54 silly get     age: '48',
+54 silly get     connection: 'keep-alive',
+54 silly get     'x-served-by': 'cache-fra1242-FRA',
+54 silly get     'x-cache': 'HIT',
+54 silly get     'x-cache-hits': '1',
+54 silly get     'x-timer': 'S1438113867.789436,VS0,VE2',
+54 silly get     vary: 'Accept' } ]
+55 verbose etag https://registry.npmjs.org/express-session from cache
+56 verbose get saving express-session to /home/pamaviyo/.npm/registry.npmjs.org/express-session/.cache.json
+57 silly addNameRange number 2 { name: 'express-session',
+57 silly addNameRange   range: '>=1.11.3 <2.0.0',
+57 silly addNameRange   hasData: true }
+58 silly addNameRange versions [ 'express-session',
+58 silly addNameRange   [ '1.0.0',
+58 silly addNameRange     '1.0.1',
+58 silly addNameRange     '1.0.2',
+58 silly addNameRange     '1.0.3',
+58 silly addNameRange     '1.0.4',
+58 silly addNameRange     '1.1.0',
+58 silly addNameRange     '1.2.0',
+58 silly addNameRange     '1.2.1',
+58 silly addNameRange     '1.3.0',
+58 silly addNameRange     '1.3.1',
+58 silly addNameRange     '1.4.0',
+58 silly addNameRange     '1.5.0',
+58 silly addNameRange     '1.5.1',
+58 silly addNameRange     '1.5.2',
+58 silly addNameRange     '1.6.0',
+58 silly addNameRange     '1.6.1',
+58 silly addNameRange     '1.6.2',
+58 silly addNameRange     '1.6.3',
+58 silly addNameRange     '1.6.4',
+58 silly addNameRange     '1.6.5',
+58 silly addNameRange     '1.7.0',
+58 silly addNameRange     '1.7.1',
+58 silly addNameRange     '1.7.2',
+58 silly addNameRange     '1.7.3',
+58 silly addNameRange     '1.7.4',
+58 silly addNameRange     '1.7.5',
+58 silly addNameRange     '1.7.6',
+58 silly addNameRange     '1.8.0',
+58 silly addNameRange     '1.8.1',
+58 silly addNameRange     '1.8.2',
+58 silly addNameRange     '1.9.0',
+58 silly addNameRange     '1.9.1',
+58 silly addNameRange     '1.9.2',
+58 silly addNameRange     '1.9.3',
+58 silly addNameRange     '1.10.0',
+58 silly addNameRange     '1.10.1',
+58 silly addNameRange     '1.10.2',
+58 silly addNameRange     '1.10.3',
+58 silly addNameRange     '1.10.4',
+58 silly addNameRange     '1.11.0',
+58 silly addNameRange     '1.11.1',
+58 silly addNameRange     '1.11.2',
+58 silly addNameRange     '1.11.3' ] ]
+59 silly addNamed express-session@1.11.3
+60 verbose addNamed "1.11.3" is a plain semver version for express-session
+61 silly cache afterAdd express-session@1.11.3
+62 verbose afterAdd /home/pamaviyo/.npm/express-session/1.11.3/package/package.json not in flight; writing
+63 verbose afterAdd /home/pamaviyo/.npm/express-session/1.11.3/package/package.json written
+64 http 404 https://registry.npmjs.org/1.0.3
+65 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+65 verbose headers   'content-type': 'application/json',
+65 verbose headers   'cache-control': 'max-age=0',
+65 verbose headers   'content-length': '51',
+65 verbose headers   'accept-ranges': 'bytes',
+65 verbose headers   date: 'Tue, 28 Jul 2015 20:04:27 GMT',
+65 verbose headers   via: '1.1 varnish',
+65 verbose headers   age: '0',
+65 verbose headers   connection: 'keep-alive',
+65 verbose headers   'x-served-by': 'cache-fra1249-FRA',
+65 verbose headers   'x-cache': 'MISS',
+65 verbose headers   'x-cache-hits': '0',
+65 verbose headers   'x-timer': 'S1438113867.788726,VS0,VE180' }
+66 silly get cb [ 404,
+66 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+66 silly get     'content-type': 'application/json',
+66 silly get     'cache-control': 'max-age=0',
+66 silly get     'content-length': '51',
+66 silly get     'accept-ranges': 'bytes',
+66 silly get     date: 'Tue, 28 Jul 2015 20:04:27 GMT',
+66 silly get     via: '1.1 varnish',
+66 silly get     age: '0',
+66 silly get     connection: 'keep-alive',
+66 silly get     'x-served-by': 'cache-fra1249-FRA',
+66 silly get     'x-cache': 'MISS',
+66 silly get     'x-cache-hits': '0',
+66 silly get     'x-timer': 'S1438113867.788726,VS0,VE180' } ]
+67 verbose stack Error: 404 Not Found: 1.0.3
+67 verbose stack     at CachingRegistryClient.<anonymous> (/home/pamaviyo/.nvm/versions/node/v0.12.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:245:14)
+67 verbose stack     at Request._callback (/home/pamaviyo/.nvm/versions/node/v0.12.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+67 verbose stack     at Request.self.callback (/home/pamaviyo/.nvm/versions/node/v0.12.3/lib/node_modules/npm/node_modules/request/request.js:368:22)
+67 verbose stack     at Request.emit (events.js:110:17)
+67 verbose stack     at Request.<anonymous> (/home/pamaviyo/.nvm/versions/node/v0.12.3/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+67 verbose stack     at Request.emit (events.js:129:20)
+67 verbose stack     at IncomingMessage.<anonymous> (/home/pamaviyo/.nvm/versions/node/v0.12.3/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+67 verbose stack     at IncomingMessage.emit (events.js:129:20)
+67 verbose stack     at _stream_readable.js:908:16
+67 verbose stack     at process._tickCallback (node.js:355:11)
+68 verbose statusCode 404
+69 verbose pkgid 1.0.3
+70 verbose cwd /home/pamaviyo/MOOC/mis_proyectos/quiz
+71 error Linux 3.13.0-59-generic
+72 error argv "/home/pamaviyo/.nvm/versions/node/v0.12.3/bin/node" "/home/pamaviyo/.nvm/versions/node/v0.12.3/bin/npm" "install" "--save" "express-session" "1.0.3"
+73 error node v0.12.3
+74 error npm  v2.9.1
+75 error code E404
+76 error 404 Not Found: 1.0.3
+76 error 404
+76 error 404 '1.0.3' is not in the npm registry.
+76 error 404 You should bug the author to publish it (or use the name yourself!)
+76 error 404 It was specified as a dependency of 'quiz'
+76 error 404
+76 error 404 Note that you can also install from a
+76 error 404 tarball, folder, http url, or git url.
+77 verbose exit [ 1, true ]
