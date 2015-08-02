@@ -42,6 +42,23 @@ app.use(function(req, res, next){
     next();
 });
 
+//Para controlar el tiempo de sesión. Auto-logout
+app.use(function(req, res, next){
+    if (req.session.user) { //Preguntamos si estamos en sesión
+        var tiempoInactividad = 120000;
+        if (!req.session.timeout) {
+            req.session.timeout = Date.now();
+        }
+        if (Date.now() > (tiempoInactividad + req.session.timeout)) {
+            delete req.session.user;
+        }
+        req.session.timeout = Date.now();               //Hora de la útlima transacción
+    }else{
+        console.log('No ha iniciado sesión;')
+    }
+    next();
+});
+
 app.use('/', routes);
 
 // catch 404 and forward to error handler
